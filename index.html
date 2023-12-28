@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Project</title>
+  <title>Kumara Project</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="./img/original-a93a719d73655ddc005676560b9f9468.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> 
   <script defer src="main.js" defer></script>
   <script defer src="./script.js"></script>
@@ -20,8 +21,8 @@
       <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Contact Us</a>
-      <a href="#">Services</a>
-      <a href="#">Register</a>
+      <a href="#services">Services</a>
+      <a href="#register">Register</a>
     </div>
     <div id="btn-col">
       <button><a href="#">Get Started</a></button>
@@ -46,7 +47,7 @@
     </div>
   </section>
   <section>
-    <div class="container">
+    <div  id="parallax" class="container">
       <div class="text">
         <h1>Trusted by companies</h1>
         <hr>
@@ -73,7 +74,7 @@
       </div>
     </div>
 
-    <div class="services">
+    <div id="services">
       <div class="col-1 hidden">
 
         <h1>Our Services</h1>
@@ -156,7 +157,64 @@ Technology in online education encompasses the integration of advanced tools and
       </div>
     </div>
   </section>
-  <div class="slideshow hidden">
+
+  <div id="parallax" class="register">
+    <div class="container_2">
+      <div class="title">Registration</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Username</span>
+              <input type="text" placeholder="Enter your username" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" placeholder="Enter your number" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="text" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Confirm Password</span>
+              <input type="text" placeholder="Confirm your password" required>
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </div>
     <section class="wrapper">
       <i class="fa-solid fa-arrow-left button" id="prev"></i>
       <div class="image-container">
@@ -178,6 +236,7 @@ Technology in online education encompasses the integration of advanced tools and
       </div>
     </section>
   </div>
+
   <footer class="footer">
     <div class="waves">
       <div class="wave" id="wave1"></div>
@@ -200,7 +259,6 @@ Technology in online education encompasses the integration of advanced tools and
       <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
       <li class="menu__item"><a class="menu__link" href="#">About</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-      <!-- <li class="menu__item"><a class="menu__link" href="#"></a></li> -->
       <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
 
     </ul>
